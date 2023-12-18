@@ -1,0 +1,395 @@
+body {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.header {
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-items {
+    margin-top: 20px;
+    padding-left: 150px;
+    height: 21px;
+}
+
+.header-items span {
+    color: #222222;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.logo {
+    width: 200px;
+    height: 21px;
+}
+
+.header-items span:hover, .bi:hover {
+    color: #777;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (min-width: 1025px){
+   
+    .dropbtn{
+    display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-items {
+        display: none;
+    }
+
+    .menu-active .header-items {
+        display: flex;
+        margin-top: 5px;
+        padding-left: 150px;
+        height: 21px
+    }
+
+    .dropdown {
+        display: flex;
+        margin-top: 15px;
+        padding-left: 150px;
+        height: 21px;
+    }
+}
+
+/* выпадающий список */
+
+.dropbtn {
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: medium;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+/* выпадающий список*/
+
+.banner {
+    background-image: url(C:\Users\Egor\Downloads\banner.jpg);
+    color: #fff;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn:hover  {
+    background-color: #777;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.featured-products {
+    background-color: #fff;
+}
+
+.featured-products img {
+    border-radius: 50px;
+}
+
+.product {
+    background-color: rgba(128, 128, 128, 0.045);
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+nav ul span{
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.banner {
+    background-image: url(C:\Users\Egor\Downloads\banner.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.featured-products {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.featured-products h3 {
+    text-decoration: underline;
+}
+
+.product {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.045);
+    color: #333;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+/* Калькулятор */
+
+.delivery-calculator h5{
+    margin-top: 8px;
+    text-align: center;
+    font-size: larger;
+}
+
+.delivery {
+    display: block;
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.045);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.calc_btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.delivery p {
+    color: #333;
+}
+
+.delivery input {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.information {
+    background: #fff;
+    display: block;
+    color: #fff;
+}
+
+.information h1 {
+    text-align: center;
+    font-size: larger;
+    color: #333;
+}
+
+.information h2 {
+    text-align: center;
+    color: #333;
+    font-size: medium;
+}
+
+.information h3 {
+    font-size: medium;
+    color: #333;
+    text-align: center;
+}
+
+.information p {
+    margin: 30px;
+    color: #333;
+    font-size: medium;
+}
+
+.information li {
+    color: #333;
+    font-size: medium;
+    text-align: left;
+    margin: 30px;
+    margin-left: 60px;
+}
+
+.telegram {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .telegram h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .telegram p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  
+  .telegram button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .telegram button:hover {
+    background-color: #777;
+  }
+
+  .map {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .map h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .map p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .map script {
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+}
